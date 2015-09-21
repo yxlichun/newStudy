@@ -1,0 +1,13 @@
+<div class="container" ng-app="login">
+    <h1>登录</h1>
+    <form ng-controller="TextAreaWithLimitCtrl">
+        <div class="row">
+            <span ng-class="{'text-warning':shouldWarn()}">Remaining:</span>
+            <textarea ng-model="message">{{message}}</textarea>
+        </div>
+        <div>
+            <button ng-click="send()" ng-disabled="!hasValidLength()">Send</button>
+            <button ng-click="clear()">Clear</button>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,13 @@
+doctype html
+html(lang='en', ng-app='polls')
+  head
+  title=title
+  script(src='//ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js')
+  link(rel='stylesheet', href='//netdna.bootstrapcdn.com/bootstrap/3.0.1/css/bootstrap.min.css')
+  link(rel='stylesheet', href='/stylesheets/style.css')
+  body(ng-controller='PollListCtrl')
+  nav.navbar.navbar-inverse.navbar-fixed-top(role='navigation')
+  div.navbar-header
+  a.navbar-brand(href='#/polls')=title
+  div.container
+  div(ng-view)
